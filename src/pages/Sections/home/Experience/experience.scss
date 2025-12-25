@@ -1,0 +1,221 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+.experience-section {
+    background: $secondary-background;
+
+    .exp-container {
+        width: 50%;
+        background: $white-color;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        padding: 40px;
+        position: relative;
+        font-family: $font-secondary;
+        border-radius: 12px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 46.5px;
+            top: 11px;
+            bottom: 11px;
+            width: 2px;
+            background-color: $bg-light;
+            z-index: 1;
+            
+        }
+
+        .experience-tile {
+            margin-top: 30px;
+
+
+            .exp-circle {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                flex-shrink: 0;
+                margin-right: 15px;
+                position: relative;
+                z-index: 2;
+            }
+
+            .exp-circle.active {
+                background-color: $primary;
+                border: 2px solid $secondary;
+            }
+
+            .exp-circle.inactive {
+                background-color: #eee;
+                border: 2px solid $bg-light;
+            }
+
+            .duration-time {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: clamp(14px, 1.2vw, 16px);
+                line-height: 1.4;
+                font-weight: 500;
+                color: #4e525a;
+                background: $bg-light;
+                padding: 6px 14px;
+                border-radius: 999px;
+                width: fit-content;
+                height: fit-content;
+            }
+
+            .exp-point-container {
+                padding-left: 18px;
+
+
+                .exp-point {
+                    font-size: 15px;
+                    color: $text-body;
+                    line-height: 1.7;
+                    margin-bottom: 8px;
+
+                    &::marker {
+                        color: $secondary;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+@media #{$range-mobile-tablet} {
+    // 300 - 991px 
+    .experience-section{
+        .exp-container {
+            width: 100%;
+        }
+    }
+}
+
+
+
+// @import "../../../../assets/styles/abstracts/variables";
+
+// .experience-section {
+//   padding: $space-100 0;
+//   background-color: #f9f9ff;
+
+//   .experience-header {
+//     text-align: center;
+//     margin-bottom: 60px;
+
+//     h2 {
+//       margin-bottom: 12px;
+//     }
+
+//     p {
+//       max-width: 520px;
+//       margin: 0 auto;
+//     }
+//   }
+// }
+
+// .experience-timeline {
+//   max-width: 720px;
+//   margin: 0 auto;
+//   position: relative;
+// }
+
+// .experience-card {
+//   display: flex;
+//   gap: 30px;
+//   padding: 32px;
+//   background: $white-color;
+//   border-radius: 16px;
+//   margin-bottom: 40px;
+//   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+//   position: relative;
+//   font-family: $font-secondary;
+
+//   &.active {
+//     border-left: 4px solid $primary;
+//     background: linear-gradient(
+//       180deg,
+//       rgba(110, 6, 242, 0.04),
+//       rgba(110, 6, 242, 0.01)
+//     );
+//   }
+// }
+
+
+// .timeline-marker {
+//   position: relative;
+//   width: 24px;
+//   display: flex;
+//   justify-content: center;
+
+//   .dot {
+//     width: 14px;
+//     height: 14px;
+//     border-radius: 50%;
+//     background: $secondary;
+//     border: 3px solid $white-color;
+//     z-index: 2;
+//   }
+
+//   .line {
+//     position: absolute;
+//     top: 18px;
+//     bottom: -40px;
+//     width: 2px;
+//     background: $border-color;
+//   }
+// }
+
+
+// .card-content {
+//   flex: 1;
+
+//   .card-header {
+//     display: flex;
+//     align-items: center;
+//     gap: 12px;
+//     margin-bottom: 12px;
+
+//     .duration {
+//       font-size: 14px;
+//       color: $text-body;
+//       background: $bg-light;
+//       padding: 6px 14px;
+//       border-radius: 999px;
+//     }
+
+//     .badge {
+//       font-size: 12px;
+//       font-weight: 500;
+//       color: $white-color;
+//       background: $primary;
+//       padding: 4px 10px;
+//       border-radius: 999px;
+//     }
+//   }
+
+//   .company {
+//     margin-bottom: 4px;
+//   }
+
+//   .role {
+//     margin-bottom: 16px;
+//     color: $text-body;
+//   }
+
+//   .points {
+//     padding-left: 18px;
+
+//     li {
+//       margin-bottom: 8px;
+//       line-height: 1.6;
+
+//       &::marker {
+//         color: $secondary;
+//       }
+//     }
+//   }
+// }

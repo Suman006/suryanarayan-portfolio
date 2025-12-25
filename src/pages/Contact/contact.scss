@@ -1,0 +1,60 @@
+@import "../../assets/styles/abstracts/variables";
+
+.contact-details {
+    background-color: $white-color;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04), 0 2px 6px rgba(15, 23, 42, 0.03);
+    .contact-left{
+        padding-top: 40px;
+    }
+}
+
+.form-container {
+    background-color: $white-color;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04), 0 2px 6px rgba(15, 23, 42, 0.03);
+
+    .common-label {
+        font-family: $font-primary;
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .common-input {
+        font-family: $font-primary;
+        font-size: 16px;
+        width: 100%;
+        padding-left: 20px;
+        border: 1px solid #eef0f6;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04), 0 2px 6px rgba(15, 23, 42, 0.03);
+        color: $text-body;
+        min-height: 60px;
+        border-radius: 15px;
+
+        &:focus {
+            outline: none;
+            border-color: $primary;
+        }
+    }
+
+    .msg-box {
+        min-height: 100px;
+        resize: none;
+        padding: 20px 10px 10px 20px;
+    }
+}
+
+@media #{$range-mobile-tablet} {
+    // 300 - 991px 
+    .contact-details{
+    .contact-left {
+        padding-top: 0px;
+    }
+}
+}

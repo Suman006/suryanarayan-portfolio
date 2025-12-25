@@ -1,0 +1,92 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+.project-section {
+
+    .project-card {
+        background: $white-color;
+        border-radius: 16px;
+        padding: 24px 16px;
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        box-shadow:
+            0 8px 20px rgba(0, 0, 0, 0.04);
+        transition: all 0.35s ease;
+
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow:
+                0 16px 40px rgba(127, 90, 240, 0.15);
+            border-color: rgba(127, 90, 240, 0.25);
+            
+        }
+        &:hover .project-img {
+                transform: scale(1.04);
+                transition: all .3s linear 0ms;
+            }
+
+        .project-img {
+            width: 100%;
+            border-radius: 12px;
+            transition: all .3s linear 0ms;
+        }
+
+        .skill-pills {
+            display: flex;
+            gap: $gap-16;
+            flex-wrap: wrap;
+
+            .pill {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: clamp(14px, 1.2vw, 16px);
+                line-height: 1.4;
+                font-family: $font-secondary;
+                font-weight: 500;
+                color: $contrast;
+                background: $bg-light;
+                padding: 6px 14px;
+                border-radius: 999px;
+                width: fit-content;
+
+                .skill-icon {
+                    width: 14px;
+                    height: 14px;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .btn {
+            flex: 1;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            border: 1px solid transparent;
+            font-family: $font-secondary;
+        }
+
+        .live-btn {
+            background-color: $primary;
+            color: $white-color;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+
+        .view-btn {
+            background-color: rgba(157, 140, 255, 0.08);
+            color: $secondary;
+            border: 1px solid $secondary;
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+    }
+}

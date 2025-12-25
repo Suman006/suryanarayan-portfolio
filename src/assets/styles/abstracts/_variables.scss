@@ -1,0 +1,53 @@
+//colors
+
+$primary: #6e06f2;       // Indigo / Violet Blue (main brand color)
+$secondary: #9D8CFF;     // Soft Lavender Blue (hover / light accent)
+
+$bg-dark: #24262f;       // Deep Navy Blue (main background)
+
+$white-color: #FFFFFF;
+$black-color : #000000;
+
+$secondary-background : #f7f8ff;
+$text-body: #6B7280;    // Cool Gray Blue (paragraph text)
+
+$border-color: #27273A; // Dark Slate Blue (borders / dividers)
+
+$contrast: #4e525a;     // Cyan Blue (highlight / attention color)
+
+$bg-light: rgba(127, 90, 240, 0.1);  //  light background color
+
+
+//fonts
+$font-primary: 'Clash Grotesk', 'Clash Grotesk Placeholder';
+$font-secondary: 'Inter', sans-serif;
+
+//spacing(gaps, margins, paddings)
+$gap-16 : 16px;
+$gap-24: 24px;
+$gap-32: 32px;
+$gap-40: 40px;
+$gap-48: 48px;
+$gap-60: 60px;
+$gap-68: 68px;
+
+$space-10: 10px;
+$space-16: 16px;
+$space-20: 20px;
+$space-30: 30px;
+$space-40: 40px;
+$space-50: 50px;
+$space-60: 60px;
+$space-70: 70px;
+$space-80: 80px;
+$space-90: 90px;
+$space-100: 100px;
+
+// range breakpoints
+
+$range-mini-mobile: "(min-width: 300px) and (max-width: 480px)";
+$range-mobile: "(min-width: 300px) and (max-width: 767px)";
+$range-tablet: "(min-width: 767px) and (max-width: 991px)";
+$range-mobile-tablet: "(min-width: 300px) and (max-width: 991px)";
+$range-mini-tab : "(min-width: 991px) and (max-width: 1200px)"
+

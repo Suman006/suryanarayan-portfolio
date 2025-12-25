@@ -1,0 +1,39 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+.contact-section {
+    background: $white-color;
+
+    .touch-icon {
+        color: $white-color;
+        margin-right: $space-10;
+    }
+
+    .mail-link {
+        text-decoration: none;
+    }
+
+    .before-border {
+        position: relative;
+        padding-top: 20px;
+        margin-top: 35px;
+
+        &::before {
+            content: "";
+            background-color: $bg-light;
+            top: -10px;
+            width: 200px;
+            height: 1px;
+            left: 33%;
+            position: absolute;
+        }
+    }
+
+    .social-icon {
+        background-color: $primary;
+        font-size: 22px;
+        vertical-align: middle;
+        border-radius: 50px;
+        color: $white-color;
+        padding: 6px 10px;
+    }
+}

@@ -1,0 +1,135 @@
+@import "../../assets/styles/abstracts/variables";
+
+
+.nav-background {
+    padding: 20px 0px !important;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+
+    .nav-flex-large {
+        display: flex;
+        justify-content: space-between;
+
+        .contact-btn-2 {
+            display: none;
+        }
+
+        .page-item {
+            font-family: $font-secondary;
+            font-weight: 600;
+            font-size: 17px;
+            padding: 15px 15px !important;
+            line-height: 1;
+            color: $contrast;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        .nav-text-logo {
+            font-family: $font-primary;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 1.2;
+            color: #000;
+            letter-spacing: -0.02em;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            transition: color 0.3s ease;
+
+            span {
+                color: $primary;
+                margin: 0 2px;
+                transition: transform 0.3s ease, color 0.3s ease;
+            }
+
+            &:hover {
+                color: $primary;
+            }
+
+            &:hover span {
+                transform: translateY(-2px);
+                color: $contrast;
+            }
+        }
+
+        .chat-icon {
+            background: $bg-dark;
+            border-radius: 50px;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: color 0.3s ease;
+
+            i {
+                font-size: 20px;
+                color: $white-color;
+                vertical-align: middle;
+                line-height: 0;
+            }
+
+            &:hover {
+                background-color: $primary;
+                transition: color 0.3s ease;
+            }
+        }
+
+        .line {
+            background-color: #999;
+            width: 30px;
+            height: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .line2 {
+            margin-top: 15px;
+        }
+
+        .navbar-toggler.open .line1 {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .navbar-toggler.open .line2 {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+    }
+}
+
+
+@media #{$range-mobile-tablet} {
+
+    .nav-background {
+
+        .nav-flex-large {
+            display: block !important;
+
+            .navbar-nav{
+                gap: $gap-16 !important;
+            }
+
+            .page-item{
+                padding: 15px 0px !important;
+            }
+
+            .contact-btn-2 {
+                display: block;
+            }
+
+            .contact-btn-1 {
+                display: none;
+            }
+
+            .toggle-flex {
+                display: flex !important;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,26 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+.exp-section {
+    .duration {
+            color: $text-body;
+            font-size: 14px;
+            font-family: $font-secondary;
+        }
+
+        .exp-point-container {
+            padding-left: 18px;
+            font-family: $font-secondary;
+
+            .exp-point {
+                font-size: 15px;
+                color: $text-body;
+                line-height: 1.7;
+                margin-bottom: 15px;
+
+                &::marker {
+                    color: $secondary;
+                    font-size: 1.1em;
+                }
+            }
+        }
+}

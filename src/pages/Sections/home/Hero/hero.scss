@@ -1,0 +1,52 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+
+
+.hero-section {
+    background:
+        radial-gradient(900px 550px at 85% 30%,
+            rgba(127, 90, 240, 0.22),
+            transparent 60%),
+        linear-gradient(180deg,
+            $white-color 0%,
+            $secondary-background 100%);
+
+    .highlight {
+        color: $primary !important;
+    }
+
+
+    .hero-img-container {
+        display: flex;
+        justify-content: end;
+
+        .hero-image {
+            width: 80%;
+            border-radius: 50%;
+            border: 1px solid $primary;
+            padding: $space-30;
+        }
+    }
+
+
+}
+
+@media #{$range-mobile-tablet} {
+    .hero-section{
+        .hero-img-container {
+            justify-content: center;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media #{$range-mobile} {
+    .hero-section {
+        .hero-img-container {
+            .hero-image {
+                padding: 20px;
+            }
+        }
+    }
+}
+

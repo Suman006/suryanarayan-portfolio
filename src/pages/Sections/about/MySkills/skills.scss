@@ -1,0 +1,29 @@
+@import "../../../../assets/styles/abstracts/variables";
+
+.skill-section {
+    padding-top: $space-100;
+    padding-bottom: $space-100;
+    background-color: $white-color;
+
+    .skill-card {
+        padding: 32px;
+        background-color: $white-color;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04), 0 2px 6px rgba(15, 23, 42, 0.03);
+        border: 1px solid #eef0f6;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-6px);
+            background-color: $secondary-background;
+            box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06), 0 6px 14px rgba(15, 23, 42, 0.04);
+        }
+        .tile-img {
+            background-color: $bg-light;
+            border-radius: 12px;
+            padding: 10px;
+            width: fit-content;
+        }
+    }
+}
