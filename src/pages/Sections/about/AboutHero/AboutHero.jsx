@@ -1,5 +1,5 @@
 import "./aboutHero.scss";
-import Profile from "../../../../assets/images/profile-photo.png"
+import Profile from "../../../../assets/images/about-profile.png"
 import { Link } from "react-router-dom";
 
 export const AboutHero = () => {

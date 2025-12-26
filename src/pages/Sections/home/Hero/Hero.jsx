@@ -1,5 +1,5 @@
 import "./hero.scss";
-import profile from "../../../../assets/images/profile-photo.png";
+import profile from "../../../../assets/images/profile-circle.png";
 import { Link } from "react-router-dom";
 
 export const Hero  = () => {
@@ -22,7 +22,7 @@ export const Hero  = () => {
                         </div>
                     </div>
                     <div className="hero-img-container">
-                        <img src={profile} className="hero-image" alt="" />
+                        <img src={profile} className="hero-image " alt="" />
                     </div>
                 </div>
             </div>
